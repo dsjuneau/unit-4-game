@@ -32,6 +32,25 @@ var game = {
       case "ruby":
         this.score = this.score + this.ruby;
         break;
+      case "diamond":
+        this.score = this.score + this.diamond;
+        break;
+      case "yellow":
+        this.score = this.score + this.yellow;
+        break;
+      case "emerald":
+        this.score = this.score + this.emerald;
+        break;
+    }
+  },
+  checkScore: function() {
+    console.log("checkscore is being run");
+    if (this.score === this.randomNumber) {
+      this.wins++;
+      this.initiate();
+    } else if (this.score > this.randomnumber) {
+      this.losses++;
+      this.initiate();
     }
   }
 };
@@ -44,7 +63,7 @@ $(document).ready(function() {
 
 // On click event
 $(".jewel").on("click", function() {
-  game.updateScore(this.value);
-  console.log($(".jewel").val());
+  game.updateScore($(this).attr("value"));
   game.updateScreen();
+  game.checkScore();
 });
