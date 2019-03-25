@@ -5,7 +5,7 @@
 // Game Object
 
 var game = {
-  randomNumber: null,
+  randomNumber: 0,
   score: 0,
   wins: 0,
   losses: 0,
@@ -44,12 +44,11 @@ var game = {
     }
   },
   checkScore: function() {
-    console.log("checkscore is being run");
-    if (this.score === this.randomNumber) {
-      this.wins++;
+    if (this.score > this.randomNumber) {
+      this.losses = this.losses + 1;
       this.initiate();
-    } else if (this.score > this.randomnumber) {
-      this.losses++;
+    } else if (this.score === this.randomnumber) {
+      this.wins = this.wins + 1;
       this.initiate();
     }
   }
@@ -64,6 +63,6 @@ $(document).ready(function() {
 // On click event
 $(".jewel").on("click", function() {
   game.updateScore($(this).attr("value"));
-  game.updateScreen();
   game.checkScore();
+  game.updateScreen();
 });
