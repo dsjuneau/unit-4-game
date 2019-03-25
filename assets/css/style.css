@@ -45,6 +45,20 @@ body {
   height: 10%;
 }
 .jewel {
+  height: 70px;
+  width: 90px;
   margin-top: 10px;
   margin-left: 10px;
+}
+
+.score1 {
+  color: #ffffff;
+  background-color: darkgreen;
+  width: 22%;
+}
+.scorebox {
+  color: #ffffff;
+  background-color: darkgreen;
+  width: 22%;
+  height: 10%;
 }
