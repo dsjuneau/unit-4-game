@@ -1,0 +1,50 @@
+body {
+  background-image: url(../images/background-paper.jpg);
+  background-size: 100%;
+}
+
+.screen {
+  background-image: url(../images/wall-paper.jpg);
+  background-size: stretch;
+  width: 960px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #ffffff;
+  background-color: darkorange;
+  display: inline-block;
+  padding: 5px 0;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.instructions {
+  background-color: tan;
+  width: 45%;
+  margin-left: 10px;
+}
+.green {
+  color: darkgreen;
+  font-weight: bold;
+}
+.match {
+  float: left;
+  background-color: darkgreen;
+  width: 20%;
+  height: 10%;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.score {
+  background-color: aqua;
+  float: left;
+  height: 10%;
+}
+.jewel {
+  margin-top: 10px;
+  margin-left: 10px;
+}
