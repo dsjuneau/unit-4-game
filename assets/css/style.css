@@ -55,10 +55,12 @@ body {
   color: #ffffff;
   background-color: darkgreen;
   width: 22%;
+  margin-left: 10px;
 }
 .scorebox {
   color: #ffffff;
   background-color: darkgreen;
   width: 22%;
   height: 10%;
+  margin-left: 10px;
 }
