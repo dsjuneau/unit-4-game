@@ -47,9 +47,15 @@ var game = {
     if (this.score > this.randomNumber) {
       this.losses = this.losses + 1;
       this.initiate();
-    } else if (this.score === this.randomnumber) {
+      $(".winner").text("You Lost!");
+      $(".winner").animate({ opacity: 1.0 }, 0);
+      $(".winner").animate({ opacity: 0.0 }, 3000);
+    } else if (this.score === this.randomNumber) {
       this.wins = this.wins + 1;
       this.initiate();
+      $(".winner").text("You Won!");
+      $(".winner").animate({ opacity: 1.0 }, 0);
+      $(".winner").animate({ opacity: 0.0 }, 3000);
     }
   }
 };

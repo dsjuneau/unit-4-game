@@ -64,3 +64,9 @@ body {
   height: 10%;
   margin-left: 10px;
 }
+.winner {
+  float: left;
+  background-color: aqua;
+  width: 10%;
+  opacity: 0;
+}
